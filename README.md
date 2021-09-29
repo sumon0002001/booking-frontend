@@ -1,70 +1,124 @@
-# Getting Started with Create React App
+# Microverse's Final Capstone Project: Book of Appointment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center"><img src="https://raw.githubusercontent.com/phalado/final-capstone/develop/public/contents/welcome.png"></h1>
 
-## Available Scripts
+This is part of Microverse's final capstone project.
+In this repository, I build the front end for a Dragon Flying Academy web app with the characters of [How to Train Your Dragon][httyd] series.
 
-In the project directory, you can run:
 
-### `yarn start`
+## Table of contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [Microverse's Final Capstone Project: Book of Appointment](#microverses-final-capstone-project-book-of-appointment)
+  - [Table of contents](#table-of-contents)
+  - [About](#about)
+  - [The Dragon Flying Academy](#the-dragon-flying-academy)
+    - [How to open](#how-to-open)
+    - [Technologies used](#technologies-used)
+  - [Future work](future-work)
+  - [Contact](#contact)
+  - [Acknowledgments](#acknowledgments)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
+## About 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The project's goal was to create a book of appointment. The back-end should be a REST API done with Ruby on Rails. The front-end should be done with React and Redux. This README will be focused on the front-end. For more details about the API visit the back-end's repository.
 
-### `yarn build`
+The project's assignment can be seen [here][assignment].
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The back-end repository can be found [here][back-end].
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Link to a live version [here][live-version].
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Repository: https://github.com/phalado/final-capstone
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## The Dragon Flying Academy 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+For this project, I created Berk's Academy web app. Berk is the only place in the world where dragons live side-by-side with humans. The dragon riders decided to create a dragon flying academy to teach the world how to ride a dragon.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+In this web app, you can schedule a class with the instructor of your choice. To schedule a class just follow the steps:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+* Signup in the [Signup page][signup]. You will be redirected to the [Login page][login], so login.
+![signup-img][signup-img]
+![login-img][login-img]
+* Choose a dragon trainer on the [Instructors page][instructors].
+![instructors-img][instructors-img]
+* Click in the button to be redirected to the instructor's schedule page
+![instructor-img][instructor-img]
+* Choose a spot. You can schedule times with  a green text. Times with a yellow text were already scheduled by you. Red text shows other user's times. Click on Barf and Belch to navigate to the previous week's or next week's schedule.
+![schedule-img][schedule-img]
 
-## Learn More
+An important detail: Dohko insists that, although he really trained a dragon, it's not a riding one.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### How to open
 
-### Code Splitting
+You can open the catalog online clicking [here][live-version] or locally following these steps:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* Click on the green button "Clone or Download"
+* Click on Download ZIP
+* Extract the project
+* In your terminal, navigate to the game's folder
+* Run *npm install*
+* Run *npm start*
 
-### Analyzing the Bundle Size
+A tab will be opened in the browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+### Technologies used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+To create this project I used:
 
-### Advanced Configuration
+* JavaScript
+* A bit of HTML and CSS
+* eslint
+* React
+* Redux
+* PropTypes
+* Github
+* Netlify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+## Future work
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Mobile version using React Native
+- More details about the dragons
+- Possibility to use a dragon as personal image
 
-### `yarn build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Contact
+
+Author: Raphael Cordeiro
+
+Follow me on [Twitter][rapha-twitter],  visit my [Github portfolio][rapha-github], my [Linkedin][rapha-linkedin], or my [personal portfolio][rapha-personal].
+
+
+## Acknowledgments
+
+[Microverse][mcvs]
+
+I have no business rights about the characters used in this API. This is only for learning purposes. All characters belong to [DreamWorks][httyd].
+
+
+<!-- Links -->
+[assignment]: https://www.notion.so/Final-Capstone-Project-Book-an-Appointment-41ded2ee99ff4fe4becf91acb332ca26
+[live-version]: https://features--berksacademy.netlify.app/
+[back-end]: https://github.com/phalado/final-capstone-api/
+[httyd]: https://www.dreamworks.com/how-to-train-your-dragon
+[mcvs]: https://www.microverse.org/
+[rapha-github]: https://github.com/phalado
+[rapha-twitter]: https://twitter.com/phalado
+[rapha-linkedin]: https://www.linkedin.com/in/raphael-cordeiro/
+[rapha-personal]: https://www.phalado.tech/
+
+[sigup]: https://features--berksacademy.netlify.app/signup
+[login]: https://features--berksacademy.netlify.app/login
+[instructors]: https://features--berksacademy.netlify.app/instructors
+
+<!-- Images -->
+[signup-img]: https://raw.githubusercontent.com/phalado/final-capstone/develop/public/contents/signup-print.png
+[login-img]: https://raw.githubusercontent.com/phalado/final-capstone/develop/public/contents/login-print.png
+[instructors-img]: https://raw.githubusercontent.com/phalado/final-capstone/develop/public/contents/instructors-print.png
+[instructor-img]: https://raw.githubusercontent.com/phalado/final-capstone/develop/public/contents/instructor-print.png
+[schedule-img]: https://raw.githubusercontent.com/phalado/final-capstone/develop/public/contents/schedule-print.png

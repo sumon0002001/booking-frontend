@@ -87,11 +87,9 @@ To create this project I used:
 
 
 
-## Contact
+## Author
 
-Author: Raphael Cordeiro
 
-Follow me on [Twitter][rapha-twitter],  visit my [Github portfolio][rapha-github], my [Linkedin][rapha-linkedin], or my [personal portfolio][rapha-personal].
 
 
 ## Acknowledgments
@@ -100,21 +98,22 @@ Follow me on [Twitter][rapha-twitter],  visit my [Github portfolio][rapha-github
 
 I have no business rights about the characters used in this API. This is only for learning purposes. All characters belong to [DreamWorks][httyd].
 
+i have taken the concept from phalado. I love his work and I tried to do in my way. 
 
 <!-- Links -->
-[assignment]: https://www.notion.so/Final-Capstone-Project-Book-an-Appointment-41ded2ee99ff4fe4becf91acb332ca26
-[live-version]: https://features--berksacademy.netlify.app/
-[back-end]: https://github.com/phalado/final-capstone-api/
+
+[live-version]:
+[back-end]: 
 [httyd]: https://www.dreamworks.com/how-to-train-your-dragon
 [mcvs]: https://www.microverse.org/
-[rapha-github]: https://github.com/phalado
-[rapha-twitter]: https://twitter.com/phalado
-[rapha-linkedin]: https://www.linkedin.com/in/raphael-cordeiro/
-[rapha-personal]: https://www.phalado.tech/
+[rapha-github]: 
+[rapha-twitter]: 
+[rapha-linkedin]: 
+[rapha-personal]: 
 
-[sigup]: https://features--berksacademy.netlify.app/signup
-[login]: https://features--berksacademy.netlify.app/login
-[instructors]: https://features--berksacademy.netlify.app/instructors
+[sigup]: 
+[login]: 
+[instructors]: 
 
 <!-- Images -->
 [signup-img]: https://raw.githubusercontent.com/phalado/final-capstone/develop/public/contents/signup-print.png

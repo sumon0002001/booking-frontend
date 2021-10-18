@@ -22,10 +22,10 @@ const InstructorFile = props => {
           <div className="inst-data">
             <h1>{name}</h1>
             <h2>
-              {`Dragon: ${dragonName}`}
+              {`Plane: ${dragonName}`}
             </h2>
             <h2>
-              {`Dragon type: ${dragonType}`}
+              {`Plane type: ${dragonType}`}
             </h2>
             <Link to={`/instSchedule/${id}`}>
               <button type="button" onClick={() => chngWeek(0)} className="inst-file-button">

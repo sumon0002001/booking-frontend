@@ -23,11 +23,7 @@ const About = () => (
       <a href="https://twitter.com/Sumon0002009" className="about-icon twitter-icon" target="_blank" />
       <a href="https://www.linkedin.com/in/mir-rawshan-ali/" className="about-icon linkedin-icon" target="_blank" />
     </div>
-    <p className="about-text">
-      I have no business rights about the characters used in this catalog.
-      This is only for learning purposes. All characters belongs to
-      <a href="https://www.dreamworks.com/how-to-train-your-dragon" target="_blanck"> DreamWorks</a>
-    </p>
+  
   </div>
 );
 

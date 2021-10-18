@@ -1,5 +1,9 @@
+.home {
+  background-color: rgb(220, 127, 200);
+}
 .home-tittle {
-  margin: 2rem;
+  margin-top: 0rem;
+padding: 2rem;
   font-weight: bold;
 }
 
@@ -24,7 +28,7 @@
   color: black;
   bottom: 0;
   font-size: 3rem;
-  background-color: rgba(256,256,256,0.5);
+  background-color: rgba(25,26,256,0.5);
   left: 1.5rem;
   padding: 0 1rem;
   border-radius: 10px;

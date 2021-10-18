@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import './styles/Header.css';
 
-const Header = props => {
+const Header = (props) => {
   const { user, logOut } = props;
 
   const handleLogout = () => {
@@ -11,16 +11,16 @@ const Header = props => {
     localStorage.removeItem('localUser');
   };
 
-  if (user.logged) {
+  if (user.logged) 
     return (
       <header className="header">
         <div className="header-logo-name">
           <Link to="/">
             <button type="button" className="header-button">
-              <img src="/contents/httyd-icon2.png" alt="Home" className="header-button-img" />
+              <img src="/contents/img_1.jpeg" alt="Home" className="header-button-img" />
             </button>
           </Link>
-          <h1>{'Berk\'s Dragon Flying Academy'}</h1>
+          <h1>{'Sumon\'s Dragon Flying Academy'}</h1>
         </div>
         <div className="account-buttons-container">
           <Link to="/account">
@@ -40,17 +40,17 @@ const Header = props => {
         </div>
       </header>
     );
-  }
+  
 
   return (
     <header className="header">
       <div className="header-logo-name">
         <Link to="/">
           <button type="button" className="header-button">
-            <img src="/contents/httyd-icon2.png" alt="Home" className="header-button-img" />
+            <img src="/contents/img_1.jpeg" alt="Home" className="header-button-img" />
           </button>
         </Link>
-        <h1>{'Berk\'s Dragon Flying Academy'}</h1>
+        <h1>{'Sumon\'s Dragon Flying Academy'}</h1>
       </div>
       <div>
         <Link to="/login">

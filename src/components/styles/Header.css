@@ -3,7 +3,7 @@ button:hover {
 }
 
 .header {
-  background-color: rgba(5,44,111,.95);
+  background-color: rgba(17, 187, 79, 0.95);
   color: white;
   display: flex;
   justify-content: space-between;

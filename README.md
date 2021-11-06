@@ -90,6 +90,12 @@ To create this project I used:
 
 ## Author
 
+👤 **Mir Rawshan Ali**
+
+- GitHub: [@sumon0002009](https://github.com/sumon0002001)
+- Twitter: [@sumon0002009](https://twitter.com/Sumon0002009)
+- LinkedIn: [Mir Rawshan Ali](https://www.linkedin.com/in/mir-rawshan-ali-27b6a5198/)
+
 
 
 
@@ -104,20 +110,10 @@ i have taken the concept from phalado. I love his work and I tried to do in my w
 <!-- Links -->
 
 [live-version]:
-[back-end]: 
+[back-end]: https://github.com/sumon0002001/booking-app-backend
 [httyd]: https://www.dreamworks.com/how-to-train-your-dragon
 [mcvs]: https://www.microverse.org/
 [github]: https://github.com/sumon0002001
 [linkedin]: https://www.linkedin.com/in/mir-rawshan-ali/
 [personal]: http://mirrawshanali.xyz/
 
-[sigup]: 
-[login]: 
-[instructors]: 
-
-<!-- Images -->
-[signup-img]: https://raw.githubusercontent.com/phalado/final-capstone/develop/public/contents/signup-print.png
-[login-img]: https://raw.githubusercontent.com/phalado/final-capstone/develop/public/contents/login-print.png
-[instructors-img]: https://raw.githubusercontent.com/phalado/final-capstone/develop/public/contents/instructors-print.png
-[instructor-img]: https://raw.githubusercontent.com/phalado/final-capstone/develop/public/contents/instructor-print.png
-[schedule-img]: https://raw.githubusercontent.com/phalado/final-capstone/develop/public/contents/schedule-print.png

@@ -1,6 +1,7 @@
 # Microverse's Final Capstone Project: Book of Appointment
 
-<h1 align="center"><img src="https://raw.githubusercontent.com/phalado/final-capstone/develop/public/contents/welcome.png"></h1>
+<h1 align="center"><img src="screen_1.png"></h1>
+[screen_1] 
 
 This is part of Microverse's final capstone project.
 In this repository, I build the front end for a Dragon Flying Academy web app with the characters of [How to Train Your Dragon][httyd] series.
@@ -29,12 +30,12 @@ The back-end repository can be found [here][back-end].
 
 Link to a live version [here][live-version].
 
-Repository: https://github.com/phalado/final-capstone
+Repository: https://github.com/sumon0002001/booking-frontend
 
 
 ## The Dragon Flying Academy 
 
-For this project, I created Berk's Academy web app. Berk is the only place in the world where dragons live side-by-side with humans. The dragon riders decided to create a dragon flying academy to teach the world how to ride a dragon.
+For this project, I created Berk's Academy web app. Berk is the only place in the world where dragons live side-by-side with humans. The dragon riders decided to create a  flying academy to teach the world how to ride a dragon in the sky.
 
 In this web app, you can schedule a class with the instructor of your choice. To schedule a class just follow the steps:
 
@@ -106,10 +107,9 @@ i have taken the concept from phalado. I love his work and I tried to do in my w
 [back-end]: 
 [httyd]: https://www.dreamworks.com/how-to-train-your-dragon
 [mcvs]: https://www.microverse.org/
-[rapha-github]: 
-[rapha-twitter]: 
-[rapha-linkedin]: 
-[rapha-personal]: 
+[github]: https://github.com/sumon0002001
+[linkedin]: https://www.linkedin.com/in/mir-rawshan-ali/
+[personal]: http://mirrawshanali.xyz/
 
 [sigup]: 
 [login]: 

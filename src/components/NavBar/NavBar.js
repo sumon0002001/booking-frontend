@@ -73,11 +73,10 @@ function NavBar() {
             )}
             <li className="footer">
               <span className="footer-icons">
-                <FaIcons.FaTwitter />
+                <FaIcons.FaTwitter  />
                 <FaIcons.FaFacebookF />
                 <FaIcons.FaGooglePlusG />
-                <FaIcons.FaVimeoV />
-                <FaIcons.FaPinterestP />
+               
               </span>
               <span className="footer-text">&copy; 2021 All Rights Reserved @rawshan</span>
             </li>

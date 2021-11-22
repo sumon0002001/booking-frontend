@@ -4,7 +4,7 @@ This project was set up with [Create React App](https://github.com/facebook/crea
 
 # Screenshot
 
-![screenshot](./src/images/screenshot.png)
+![screenshot](./src/images/screen.png)
 
 ## Built With
 - React.

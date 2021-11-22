@@ -79,7 +79,7 @@ function NavBar() {
                 <FaIcons.FaVimeoV />
                 <FaIcons.FaPinterestP />
               </span>
-              <span className="footer-text">&copy; 2020 All Rights Reserved</span>
+              <span className="footer-text">&copy; 2021 All Rights Reserved @rawshan</span>
             </li>
           </ul>
         </nav>

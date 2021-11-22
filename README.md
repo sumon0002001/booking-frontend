@@ -80,11 +80,7 @@ To create this project I used:
 * Netlify
 
 
-## Future work
 
-- Mobile version using React Native
-- More details about the dragons
-- Possibility to use a dragon as personal image
 
 
 

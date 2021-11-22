@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+ # Vehicle Booking App
+This is a tablet web application built with React for booking vehicles. The data for the app is obtained from [a Rails API](https://github.com/sumon0002001/booking-app-backend) using axios and stored in the Redux store to be accessed by multiple components.
+This project was set up with [Create React App](https://github.com/facebook/create-react-app).
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Screenshot
 
-## Available Scripts
+![screenshot](./src/images/screen.png)
 
-In the project directory, you can run:
+## Built With
+- React.
+- React Hooks.
+- create-react-app tool.
+- Redux.
+- Bootstrap.
+- [Rails API](https://github.com/sumon0002001/booking-app-backend).
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Live Demo
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Click [here](https://vehicle-booking.netlify.app) to visit a live version of the web app which has been deployed to Netlify.
 
-### `yarn test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To get a local copy up and running follow these simple example steps.
 
-### `yarn build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- NPM.
+- Javascript.
+- React.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Setup
+- Clone the repository by running in your `git clone https://github.com/sumon0002001/booking-frontend` terminal/command line.
+- Run `npm install` to install dependencies.
+- Run `npm start` to start the development server.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Testing
+To run tests,
+- Run `npm test` in the project directory in your terminal/command line.
 
-### `yarn eject`
+## Author
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+👤 **Mir Rawshan Ali**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- GitHub: [@sumon0002009](https://github.com/sumon0002001)
+- Twitter: [@sumon0002009](https://twitter.com/Sumon0002009)
+- LinkedIn: [Mir Rawshan Ali](https://www.linkedin.com/in/mir-rawshan-ali-27b6a5198/)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 🤝 Contributing
 
-## Learn More
+Contributions, issues and feature requests are welcome!
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Feel free to check the [issues page](https://github.com/sumon0002001/booking-frontend/issues).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Show your support
 
-### Code Splitting
+Kindly give this repository a ⭐️ if you like this project!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Acknowledgments
 
-### Analyzing the Bundle Size
+- Project specifications by [Microverse](https://www.microverse.org) and can be found [here].
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- [Design inspiration](https://www.behance.net/gallery/26425031/Vespa-Responsive-Redesign) is taken from [Murat Korkmaz](https://www.behance.net/muratk)
 
-### Making a Progressive Web App
+## 📝 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This project is licensed under the MIT License.
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

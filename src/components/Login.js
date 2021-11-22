@@ -1,92 +1,145 @@
-import React, { useState } from 'react';
-import { Redirect } from 'react-router';
+/* eslint-disable consistent-return */
+/* eslint-disable no-underscore-dangle */
+/* eslint-disable jsx-a11y/label-has-associated-control */
+import React, { useState, useRef } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
-import { ToastContainer, toast } from 'react-toastify';
-import { userLogin } from '../services/user';
-import 'react-toastify/dist/ReactToastify.css';
-import './styles/Forms.css';
+
+import Form from 'react-validation/build/form';
+import Input from 'react-validation/build/input';
+import CheckButton from 'react-validation/build/button';
+
+import { login } from '../actions/auth';
+import { SET_MESSAGE } from '../actions/types';
 
 const Login = props => {
-  const {
-    user, signedUsers, logIn, addUsr,
-  } = props;
-  const [email, setEmail] = useState();
-  const [pass, setPass] = useState();
+  const form = useRef();
+  const checkBtn = useRef();
 
-  const handleChange = event => {
-    if (event.target.id === 'input-email') {
-      setEmail(event.target.value);
-    } else if (event.target.id === 'input-pass') {
-      setPass(event.target.value);
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [loading, setLoading] = useState(false);
+
+  const required = value => {
+    if (!value) {
+      return (
+        <div className="alert alert-danger" role="alert">
+          This field is required!
+        </div>
+      );
     }
   };
 
-  const handleSubmit = async event => {
-    event.preventDefault();
-    const response = await userLogin({ email, pass });
-    if (response === false) {
-      return (
-        <div>
-          {toast.error('Error: Not a user')}
-          <ToastContainer />
-        </div>
-      );
+  const dispatch = useDispatch();
+  const { message } = useSelector(state => state.message);
+
+  const onChangeUsername = e => {
+    const username = e.target.value;
+    setUsername(username);
+  };
+
+  const onChangePassword = e => {
+    const password = e.target.value;
+    setPassword(password);
+  };
+
+  const handleLogin = e => {
+    e.preventDefault();
+
+    setLoading(true);
+
+    form.current.validateAll();
+
+    if (checkBtn.current.context._errors.length === 0) {
+      dispatch(login(username, password))
+        .then(response => {
+          if ('error' in response) {
+            dispatch({
+              type: SET_MESSAGE,
+              payload: response.error,
+            });
+            setLoading(false);
+          } else {
+            dispatch({
+              type: SET_MESSAGE,
+              payload: '',
+            });
+            props.history.push('/vehicle');
+          }
+        })
+        .catch(() => {
+          setLoading(false);
+        });
+    } else {
+      setLoading(false);
     }
-
-    if (response === true) {
-      return (
-        <div>
-          {toast.warn('Password incorrect')}
-          <ToastContainer />
-        </div>
-      );
-    }
-
-    logIn({ id: response.id, name: response.name, email: response.email });
-
-    const token = JSON.stringify({
-      id: response.id, name: response.name, email: response.email, remember: true,
-    });
-    localStorage.setItem('localUser', token);
-
-    const tempUser = signedUsers.filter(usr => usr.id === response.id);
-    if (tempUser.length === 0) addUsr({ id: response.id, name: response.name });
-
-    return (
-      <div>
-        {toast.success('Login successfull')}
-        <ToastContainer />
-        <Redirect to="/" />
-      </div>
-    );
   };
 
   return (
-    <div className="login">
-      {user.logged ? <Redirect to="/" /> : null}
-      <h1 id="login-message">Fill the form to login</h1>
-      <form onSubmit={handleSubmit} className="login-form">
-        <label htmlFor="email">
-          Email:
-          <input id="input-email" type="email" onChange={handleChange} className="form-control" />
-        </label>
-        <label htmlFor="password">
-          Password:
-          <input id="input-pass" type="password" onChange={handleChange} className="form-control" />
-        </label>
-        <input type="submit" value="Submit" className="btn btn-primary form-control" />
-      </form>
+    <div className="col-md-12">
+      <div className="card card-container">
+        <img
+          src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"
+          alt="profile-img"
+          className="profile-img-card"
+        />
+
+        <Form onSubmit={handleLogin} ref={form}>
+          <div className="form-group">
+            <label htmlFor="username">Username</label>
+            <Input
+              type="text"
+              className="form-control"
+              name="username"
+              autoComplete="username"
+              value={username}
+              onChange={onChangeUsername}
+              validations={[required]}
+            />
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="password">Password</label>
+            <Input
+              type="password"
+              className="form-control"
+              name="password"
+              autoComplete="current-password"
+              value={password}
+              onChange={onChangePassword}
+              validations={[required]}
+            />
+          </div>
+
+          <div className="form-group">
+            <button
+              type="button"
+              className="btn btn-success btn-block"
+              disabled={loading}
+            >
+              <span>Login</span>
+              {loading && <span className="spinner-border spinner-border-sm" />}
+            </button>
+          </div>
+
+          {message && (
+            <div className="form-group">
+              <div className="alert alert-danger" role="alert">
+                {message}
+              </div>
+            </div>
+          )}
+          <CheckButton style={{ display: 'none' }} ref={checkBtn} />
+        </Form>
+      </div>
     </div>
   );
 };
 
 Login.propTypes = {
-  user: PropTypes.shape({
-    logged: PropTypes.bool,
-  }).isRequired,
-  signedUsers: PropTypes.arrayOf(PropTypes.object).isRequired,
-  logIn: PropTypes.func.isRequired,
-  addUsr: PropTypes.func.isRequired,
+  history: PropTypes.shape({ push: PropTypes.func }).isRequired,
+  location: PropTypes.shape({}).isRequired,
+  match: PropTypes.shape({}).isRequired,
 };
 
 export default Login;

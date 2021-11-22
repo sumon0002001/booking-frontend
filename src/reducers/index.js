@@ -1,16 +1,14 @@
 import { combineReducers } from 'redux';
-import instructors from './instructors';
-import user from './user';
-import classes from './classes';
-import signedUsers from './signedUsers';
-import week from './week';
+import auth from './auth';
+import message from './message';
+import { vehiclesReducer as vehicles } from './vehicles';
+import { bookingsReducer as bookings } from './bookings';
 
 const rootReducer = combineReducers({
-  user,
-  instructors,
-  classes,
-  signedUsers,
-  week,
+  auth,
+  message,
+  vehicles,
+  bookings,
 });
 
 export default rootReducer;

@@ -1,90 +1,45 @@
-# Microverse's Final Capstone Project: Book of Appointment
+ # Vehicle Booking App
+This is a tablet web application built with React for booking vehicles. The data for the app is obtained from [a Rails API](https://github.com/sumon0002001/booking-app-backend) using axios and stored in the Redux store to be accessed by multiple components.
+This project was set up with [Create React App](https://github.com/facebook/create-react-app).
 
-<h1 align="center"><img src="screen_1.png"></h1>
-[screen_1] 
+# Screenshot
 
-This is part of Microverse's final capstone project.
-In this repository, I build the front end for a Dragon Flying Academy web app with the characters of [How to Train Your Dragon][httyd] series.
+![screenshot](./src/images/screenshot.png)
 
-
-## Table of contents
-
-- [Microverse's Final Capstone Project: Book of Appointment](#microverses-final-capstone-project-book-of-appointment)
-  - [Table of contents](#table-of-contents)
-  - [About](#about)
-  - [The Dragon Flying Academy](#the-dragon-flying-academy)
-    - [How to open](#how-to-open)
-    - [Technologies used](#technologies-used)
-  - [Future work](future-work)
-  - [Contact](#contact)
-  - [Acknowledgments](#acknowledgments)
+## Built With
+- React.
+- React Hooks.
+- create-react-app tool.
+- Redux.
+- Bootstrap.
+- [Rails API](https://github.com/sumon0002001/booking-app-backend).
 
 
-## About 
+## Live Demo
 
-The project's goal was to create a book of appointment. The back-end should be a REST API done with Ruby on Rails. The front-end should be done with React and Redux. This README will be focused on the front-end. For more details about the API visit the back-end's repository.
+Click [here](https://vehicle-booking.netlify.app) to visit a live version of the web app which has been deployed to Netlify.
 
-The project's assignment can be seen [here][assignment].
+## Getting Started
 
-The back-end repository can be found [here][back-end].
+To get a local copy up and running follow these simple example steps.
 
-Link to a live version [here][live-version].
+### Prerequisites
 
-Repository: https://github.com/sumon0002001/booking-frontend
+- NPM.
+- Javascript.
+- React.
 
+### Setup
+- Clone the repository by running in your `git clone https://github.com/sumon0002001/booking-frontend` terminal/command line.
+- Run `npm install` to install dependencies.
+- Run `npm start` to start the development server.
 
-## The Dragon Flying Academy 
-
-For this project, I created Berk's Academy web app. Berk is the only place in the world where dragons live side-by-side with humans. The dragon riders decided to create a  flying academy to teach the world how to ride a dragon in the sky.
-
-In this web app, you can schedule a class with the instructor of your choice. To schedule a class just follow the steps:
-
-* Signup in the [Signup page][signup]. You will be redirected to the [Login page][login], so login.
-![signup-img][signup-img]
-![login-img][login-img]
-* Choose a dragon trainer on the [Instructors page][instructors].
-![instructors-img][instructors-img]
-* Click in the button to be redirected to the instructor's schedule page
-![instructor-img][instructor-img]
-* Choose a spot. You can schedule times with  a green text. Times with a yellow text were already scheduled by you. Red text shows other user's times. Click on Barf and Belch to navigate to the previous week's or next week's schedule.
-![schedule-img][schedule-img]
-
-An important detail: Dohko insists that, although he really trained a dragon, it's not a riding one.
-
-
-### How to open
-
-You can open the catalog online clicking [here][live-version] or locally following these steps:
-
-* Click on the green button "Clone or Download"
-* Click on Download ZIP
-* Extract the project
-* In your terminal, navigate to the game's folder
-* Run *npm install*
-* Run *npm start*
-
-A tab will be opened in the browser.
-
-
-### Technologies used
-
-To create this project I used:
-
-* JavaScript
-* A bit of HTML and CSS
-* eslint
-* React
-* Redux
-* PropTypes
-* Github
-* Netlify
-
-
-
-
-
+### Testing
+To run tests,
+- Run `npm test` in the project directory in your terminal/command line.
 
 ## Author
+
 
 👤 **Mir Rawshan Ali**
 
@@ -92,24 +47,23 @@ To create this project I used:
 - Twitter: [@sumon0002009](https://twitter.com/Sumon0002009)
 - LinkedIn: [Mir Rawshan Ali](https://www.linkedin.com/in/mir-rawshan-ali-27b6a5198/)
 
+## 🤝 Contributing
 
+Contributions, issues and feature requests are welcome!
 
+Feel free to check the [issues page](https://github.com/sumon0002001/booking-frontend/issues).
+
+## Show your support
+
+Kindly give this repository a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-[Microverse][mcvs]
+- Project specifications by [Microverse](https://www.microverse.org) and can be found [here].
 
-I have no business rights about the characters used in this API. This is only for learning purposes. All characters belong to [DreamWorks][httyd].
+- [Design inspiration](https://www.behance.net/gallery/26425031/Vespa-Responsive-Redesign) is taken from [Murat Korkmaz](https://www.behance.net/muratk)
 
-i have taken the concept from phalado. I love his work and I tried to do in my way. 
+## 📝 License
 
-<!-- Links -->
-
-[live-version]:https://sleepy-golick-8e0705.netlify.app/
-[back-end]: https://github.com/sumon0002001/booking-app-backend
-[httyd]: https://www.dreamworks.com/how-to-train-your-dragon
-[mcvs]: https://www.microverse.org/
-[github]: https://github.com/sumon0002001
-[linkedin]: https://www.linkedin.com/in/mir-rawshan-ali/
-[personal]: http://mirrawshanali.xyz/
+This project is licensed under the MIT License.
 
